@@ -3,10 +3,11 @@ import java.util.Random;
 public class HolidayItem implements Comparable<HolidayItem>{
 
     public String name;
+
     public int duration;
+
     public boolean street;
     public Integer price;
-
     public HolidayItem(String name, int duration, Integer price, boolean street) {
 
         this.name = name;
@@ -34,6 +35,14 @@ public class HolidayItem implements Comparable<HolidayItem>{
         this.price = price;
     }
 
+    public int getDuration() {
+        return duration;
+    }
+
+    public boolean isStreet() {
+        return street;
+    }
+
     @Override
     public String toString() {
         return "Holiday [price=" + price + "]";
@@ -43,11 +52,7 @@ public class HolidayItem implements Comparable<HolidayItem>{
         return this.getPrice().compareTo(o.getPrice());
     }
 
-    public int ranDig(int ran){
-        Random random = new Random();
-        int digit = random.nextInt(ran) + 12;
-        return digit;
-    }
+
 }
 
 
