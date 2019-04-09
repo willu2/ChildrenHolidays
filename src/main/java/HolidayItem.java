@@ -1,19 +1,22 @@
-import java.util.Random;
 
 public class HolidayItem implements Comparable<HolidayItem>{
 
-    public String name;
+    private String name;
 
-    public int duration;
+    private int duration;
 
-    public boolean street;
-    public Integer price;
-    public HolidayItem(String name, int duration, Integer price, boolean street) {
+    private boolean street;
+
+    private boolean animator;
+
+    private Integer price;
+    public HolidayItem(String name, int duration, Integer price, boolean street, boolean animator) {
 
         this.name = name;
         this.duration = duration;
         this.price = price;
         this.street = street;
+        this.animator = animator;
     }
 
     public HolidayItem() {
@@ -41,6 +44,10 @@ public class HolidayItem implements Comparable<HolidayItem>{
 
     public boolean isStreet() {
         return street;
+    }
+
+    public boolean isAnimator() {
+        return animator;
     }
 
     @Override
