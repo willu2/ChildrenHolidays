@@ -1,15 +1,12 @@
 
-public class HolidayItem implements Comparable<HolidayItem>{
+public class HolidayItem implements Comparable<HolidayItem>, ItemHelpMethods{
 
     private String name;
-
     private int duration;
-
+    private Integer price;
     private boolean street;
-
     private boolean animator;
 
-    private Integer price;
     public HolidayItem(String name, int duration, Integer price, boolean street, boolean animator) {
 
         this.name = name;
@@ -59,7 +56,23 @@ public class HolidayItem implements Comparable<HolidayItem>{
         return this.getPrice().compareTo(o.getPrice());
     }
 
+    @Override
+    public String isStreetText(boolean is_street) {
+        if(is_street){
+            return "outside";
+        }else{
+            return "inside";
+        }
+    }
 
+    @Override
+    public String isAnimatorText(boolean is_animator) {
+        if(is_animator){
+            return "present";
+        }else {
+            return "absent";
+        }
+    }
 }
 
 

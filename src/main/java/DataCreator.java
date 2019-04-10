@@ -82,8 +82,8 @@ public class DataCreator {
     private void printItemList(HolidayItem itemEntity){
         System.out.print("Game name:>  " + itemEntity.getName());
         System.out.print("  |duration:> " + itemEntity.getDuration()+" min");
-        System.out.print("  |street:> " + itemEntity.isStreet());
-        System.out.print("  |animator:> " + itemEntity.isAnimator());
+        System.out.print("  |location:> " + itemEntity.isStreetText(itemEntity.isStreet()));
+        System.out.print("  |animator:> " + itemEntity.isAnimatorText(itemEntity.isAnimator()));
         System.out.print("  |price:> " + itemEntity.getPrice() + " $");
         System.out.println();
     }
