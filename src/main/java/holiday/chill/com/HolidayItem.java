@@ -1,3 +1,4 @@
+package holiday.chill.com;
 
 public class HolidayItem implements Comparable<HolidayItem>, ItemHelpMethods{
 
@@ -23,16 +24,8 @@ public class HolidayItem implements Comparable<HolidayItem>, ItemHelpMethods{
         return name;
     }
 
-    public void setName(String name) {
-        this.name = name;
-    }
-
     public Integer getPrice() {
         return price;
-    }
-
-    public void setPrice(int price) {
-        this.price = price;
     }
 
     public int getDuration() {

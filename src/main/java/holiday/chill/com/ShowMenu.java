@@ -1,3 +1,5 @@
+package holiday.chill.com;
+
 import java.io.BufferedReader;
 import java.io.InputStreamReader;
 

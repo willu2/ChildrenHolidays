@@ -1,3 +1,5 @@
+package holiday.chill.com;
+
 import java.util.*;
 
 public class DataCreator {
@@ -15,6 +17,7 @@ public class DataCreator {
         pullData();
     }
 
+    //add all random data to base
     private void pullData(){
         for (int i = 0; i < games.length; i++){
             holidayItem = new HolidayItem(games[i], random(45,15), random(150, 50), randomBool(), randomBool());
@@ -39,6 +42,7 @@ public class DataCreator {
         }
     }
 
+    //print all in the house
     public void showByInside(){
         Collections.sort(allHolidays);
         for (Iterator<HolidayItem> it = allHolidays.iterator(); it.hasNext(); ) {

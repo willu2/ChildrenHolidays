@@ -1,3 +1,5 @@
+package holiday.chill.com;
+
 public class ChildrenHolidays {
     public static void main(String[] args) {
 
